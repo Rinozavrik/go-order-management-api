@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "milestones/00-environment-and-modul.md",
-                "mode": "preview",
-                "source": true
+                "file": "milestones/00-environment-and-module.md",
+                "mode": "source",
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "00-environment-and-modul"
+              "title": "00-environment-and-module"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "milestones/00-environment-and-modul.md",
+                "file": "obsidian-cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Обратные ссылки для 00-environment-and-modul"
+              "title": "Обратные ссылки для obsidian-cheatsheet"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "milestones/00-environment-and-modul.md",
+                "file": "obsidian-cheatsheet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Исходящие ссылки из 00-environment-and-modul"
+              "title": "Исходящие ссылки из obsidian-cheatsheet"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "milestones/00-environment-and-modul.md",
+                "file": "obsidian-cheatsheet.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Структура 00-environment-and-modul"
+              "title": "Структура obsidian-cheatsheet"
             }
           }
         ]
@@ -185,16 +185,18 @@
   },
   "active": "f96a1c61753b2b0b",
   "lastOpenFiles": [
-    "learning-process.md",
-    "milestones/00-environment-and-modul.md",
     "index.md",
+    "milestones/00-environment-and-module.md",
+    "learning-process.md",
+    "obsidian-cheatsheet.md",
+    "templates/decision.md",
+    "templates/review.md",
+    "templates/concept.md",
+    "milestones/00-environment-and-module.md",
     "codex-prompts.md",
     "questions.md",
     "question.md",
     "diagrams",
-    "templates/decision.md",
-    "templates/review.md",
-    "templates/concept.md",
     "milestones/00-enviroment-and-module.md",
     "templates",
     "concepts/index.md"
