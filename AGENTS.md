@@ -19,6 +19,12 @@ Before working on a learning task:
 
 Use `docs/codex-prompts.md` only as a prompt reference. It is not an additional mandatory instruction file.
 
+## Communication language
+
+- Communicate with the learner in Russian unless explicitly requested otherwise.
+- Keep source code, identifiers, package names, file names, commands, and commit messages in English.
+- Preserve established Go terminology in English when translation would reduce precision.
+
 ## General working rules
 
 - Prefer idiomatic Go over patterns copied from Node.js, NestJS, Java, or C#.

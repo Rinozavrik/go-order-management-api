@@ -30,13 +30,15 @@
 
 ## Текущая задача
 
-Завершить подготовку среды и перейти к учебной части Milestone 00:
+Учебная часть Milestone 00:
 
-- проверить Go module;
-- подключить Codex к репозиторию;
-- проверить, что Codex понимает `AGENTS.md`;
-- сделать первый инфраструктурный commit;
-- начать изучение Go modules и packages.
+- изучить Go module и package;
+- разобраться с `package main`;
+- создать первый исполняемый package;
+- создать первый внутренний package;
+- написать первую функцию;
+- написать первый table-driven test;
+- настроить базовый GitHub Actions workflow.
 
 ## Прогресс
 
@@ -49,10 +51,21 @@
 - [x] Установлены Templater, Spaced Repetition, Dataview и Excalidraw
 - [x] Добавлен `learning-process.md`
 - [x] Добавлен `codex-prompts.md`
-- [ ] Репозиторий открыт в Codex
-- [ ] Codex корректно прочитал инструкции
-- [ ] Сделан первый инфраструктурный commit
-- [ ] Изменения отправлены в GitHub
+- [x] Репозиторий открыт в Codex
+- [x] Codex корректно прочитал инструкции
+- [x] Сделан первый инфраструктурный commit
+- [x] Изменения отправлены в GitHub
+- [ ] Разобрана ментальная модель Go module и package
+- [ ] Понятно, как module path формирует import paths
+- [ ] Понятна роль `package main`, `func main` и директории `internal`
+- [ ] Создан исполняемый package в `cmd/app`
+- [ ] Создан небольшой package внутри `internal`
+- [ ] Написана первая функция и table-driven test
+- [ ] `gofmt`, `go test ./...` и `go vet ./...` проходят
+- [ ] Добавлен и успешно проходит базовый GitHub Actions workflow
+- [ ] Код проверен Codex, существенные замечания исправлены
+- [ ] Я могу своими словами объяснить module, package, import path и `internal`
+- [ ] Учебная часть отправлена в GitHub отдельным логическим commit
 
 ## Навигация
 

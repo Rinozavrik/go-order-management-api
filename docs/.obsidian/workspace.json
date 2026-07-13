@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "codex-prompts.md",
-                "mode": "source",
-                "source": false
+                "file": "milestones/00-environment-and-modul.md",
+                "mode": "preview",
+                "source": true
               },
               "icon": "lucide-file",
-              "title": "codex-prompts"
+              "title": "00-environment-and-modul"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "codex-prompts.md",
+                "file": "milestones/00-environment-and-modul.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Обратные ссылки для codex-prompts"
+              "title": "Обратные ссылки для 00-environment-and-modul"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "codex-prompts.md",
+                "file": "milestones/00-environment-and-modul.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Исходящие ссылки из codex-prompts"
+              "title": "Исходящие ссылки из 00-environment-and-modul"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "codex-prompts.md",
+                "file": "milestones/00-environment-and-modul.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Структура codex-prompts"
+              "title": "Структура 00-environment-and-modul"
             }
           }
         ]
@@ -185,10 +185,12 @@
   },
   "active": "f96a1c61753b2b0b",
   "lastOpenFiles": [
-    "index.md",
     "learning-process.md",
-    "questions.md",
+    "milestones/00-environment-and-modul.md",
+    "index.md",
     "codex-prompts.md",
+    "questions.md",
+    "question.md",
     "diagrams",
     "templates/decision.md",
     "templates/review.md",
