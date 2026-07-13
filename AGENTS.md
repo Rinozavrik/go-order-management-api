@@ -4,9 +4,20 @@
 
 This repository is a learning project for becoming capable of building production-ready backend services in Go.
 
-The learner is a Senior Node.js/NestJS developer with production experience in TypeScript, PostgreSQL, Redis, RabbitMQ, Docker, Kubernetes, REST APIs, and distributed systems.
+The learner is a Senior Node.js/NestJS developer with production experience in TypeScript, PostgreSQL, MongoDB, Redis, RabbitMQ, Docker, Kubernetes, REST APIs, and distributed systems.
 
 The goal is not merely to produce working code. The goal is to learn idiomatic Go, its standard library, runtime model, tooling, testing practices, and production engineering.
+
+## Required context
+
+Before working on a learning task:
+
+- read `docs/index.md`;
+- read the current milestone;
+- follow the rules in this file;
+- treat the repository as the source of truth.
+
+Use `docs/codex-prompts.md` only as a prompt reference. It is not an additional mandatory instruction file.
 
 ## General working rules
 
@@ -18,6 +29,7 @@ The goal is not merely to produce working code. The goal is to learn idiomatic G
 - Keep dependencies explicit.
 - Prefer composition over inheritance-like abstractions.
 - Keep APIs small and readable.
+- Avoid global mutable state.
 - Format all Go code with `gofmt`.
 
 ## Architecture rules
@@ -28,8 +40,8 @@ The goal is not merely to produce working code. The goal is to learn idiomatic G
 - Do not introduce a dependency injection container.
 - Do not introduce a service layer without an actual orchestration or business-logic responsibility.
 - Do not define an interface when there is only one implementation unless there is a concrete consumer-side reason.
-- Prefer consumer-defined, small interfaces.
-- Avoid global mutable state.
+- Prefer small, consumer-defined interfaces.
+- Do not add infrastructure before the corresponding milestone requires it.
 
 ## Error handling
 
@@ -44,7 +56,7 @@ The goal is not merely to produce working code. The goal is to learn idiomatic G
 - Pass `context.Context` as the first parameter when cancellation, deadlines, or request scope are relevant.
 - Do not store `context.Context` in structs.
 - Close resources correctly.
-- Check errors returned by resource cleanup when they can affect correctness.
+- Check cleanup errors when they can affect correctness.
 - Do not start a goroutine without a clear owner, termination condition, and error-handling strategy.
 - Check for goroutine leaks and blocked channel operations.
 
@@ -63,7 +75,7 @@ When reviewing concurrent code, inspect:
 - unbounded concurrency;
 - backpressure.
 
-Use the race detector when concurrency is involved:
+When concurrency is involved, run:
 
 ```bash
 go test -race ./...
@@ -86,7 +98,7 @@ go vet ./...
 
 When asked to review code:
 
-1. Check correctness first.
+1. Check correctness.
 2. Identify compilation and runtime errors.
 3. Check idiomatic Go.
 4. Check error handling.
@@ -95,7 +107,7 @@ When asked to review code:
 7. Check concurrency and goroutine lifecycle.
 8. Check package boundaries and API clarity.
 9. Check testability.
-10. Check unnecessary abstractions.
+10. Check unnecessary interfaces and abstractions.
 11. Discuss performance only where it materially matters.
 
 Do not approve code merely because it works.
@@ -115,7 +127,7 @@ For every finding, explain:
 
 ## Learning mode
 
-Do not immediately implement complete exercise solutions unless explicitly requested.
+Do not implement a complete exercise before the learner's first attempt unless explicitly requested.
 
 For a new exercise:
 
@@ -127,6 +139,26 @@ For a new exercise:
 6. Provide a complete reference solution only after the attempt or an explicit request.
 
 When useful, compare the concept with Node.js or TypeScript, but explicitly identify where the analogy breaks down.
+
+Do not mark a topic, task, or milestone as completed without explicit user confirmation.
+
+## Documentation workflow
+
+- Keep detailed review findings in `docs/reviews`, not in `docs/index.md`.
+- Update `docs/index.md` only when the current milestone, current task, or project status changes.
+- Do not invent progress.
+- Preserve Russian as the language of learning documentation.
+- Keep Go terminology, source code, package names, file names, directory names, and commit messages in English.
+- Do not rewrite the learner's wording unless it is technically incorrect or explicitly requested.
+
+When explicitly requested to add flashcards:
+
+- append 3–5 cards to the relevant concept note;
+- use the format `Question::Answer`;
+- test mental models, trade-offs, failure modes, or production behavior;
+- avoid trivial syntax questions;
+- avoid duplicates;
+- do not modify unrelated sections.
 
 ## Current technology direction
 
@@ -141,6 +173,7 @@ The project may eventually use:
 - Docker Compose;
 - `log/slog`;
 - OpenTelemetry;
-- Prometheus.
+- Prometheus;
+- Kubernetes.
 
 Do not add these technologies before the corresponding milestone.
